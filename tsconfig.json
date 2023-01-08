@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "build",
+    // "allowJs": true,
+    // "listFiles": true,
+    "listEmittedFiles": true,
+    // "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "pretty": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,  // If isolatedModules is set, all implementation files must be modules (which means it has some form of import/export). An error occurs if any file isn’t a module.
+    // "jsx": "react-jsx",
+    // "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noEmitOnError": true
+    // "declaration": true,
+    // "emitDeclarationOnly": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ]
+}
