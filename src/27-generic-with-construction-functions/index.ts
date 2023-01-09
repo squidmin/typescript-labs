@@ -50,7 +50,7 @@ const inst2 = createInstance(C2, "Instance 2");
 /**
  * The line that reads
  *   function createInstance<T>(ctor: IMyInterfaceWithConstructor<T>, param1: string): T {  // Create a new type T.
- * creates an instance of the class that defines the 'param1' object.
+ * declares a function to an instance of the class that defines the 'param1' object.
  * The constructor function has the specification of having two parameters. The first one is the constraint.
  * It specifies a class with a constructor defined by the interface
  *   IMyInterfaceWithConstructor
