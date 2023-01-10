@@ -47,12 +47,19 @@ genericInferred2({ custom: "sure", });
 
 /**
  * The type does not need to be specified, but regardless, the type passed inside the function will
- *   always be generic. for example, the line that reads
- *     
+ *   always be generic. For example, the above line that reads
+ *     genericInferred2(1);
+ *   is using the 'number' type. The above line that reads
+ *     genericInferred(true);
+ *   is using a 'boolean' type. The above line that reads
+ *     genericInferred2({ custom: "sure", });
+ *   is using a custom object.
  */
-function genericInferred3<T extends string>(param: T) {
-  return param.length;
-}
+
+/**
+ * As seen, generic constraints must be used in order to access a portion of the inferred type.
+ */
+function genericInferred3<T extends string>(param: T) { return param.length; }
 console.log(genericInferred3("Four"));
 // genericInferred3(123); // Does not transpile.
 type UUID = string;
