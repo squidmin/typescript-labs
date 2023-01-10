@@ -32,7 +32,7 @@
 /**
  * To compare two generics, keep in mind that the types are erased (removed) when TypeScript is transpiled
  *   to JavaScript. Thus, we need to create a custom generic array with a unique identifier (or many) for
- *   comparison. For example, we can add an 'id' field and compare the value without erasing it at runtime.
+ *   comparison. For example, we can add an 'id' field and compare the value without erasing the type at runtime.
  */
 class IdentificatedGeneric<S> extends Array<S> {
   public id: string; // Enhancement of Array class.
