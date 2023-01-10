@@ -78,7 +78,7 @@ console.log(c3);
  * Uncommenting the 'c1' initialization throws an exception because they have a different
  *   'id'. Even if they have the same type, it simulates two different generics.
  * Uncommenting the 'c2' initialization causes a transpilation error because the data type of the second
- *   parameter is different.
+ *   parameter is different, even if they are passed the same 'id'.
  */
 
 
