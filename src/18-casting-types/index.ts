@@ -23,6 +23,10 @@
  *   followed by the type you want to cast the variable to.
  */
 
+
+/*********************************************************************************************/
+
+
 /**
  * The following code demonstrates an 'unknown' type cast to a 'number'.
  */
@@ -34,6 +38,9 @@ const cast2: number = unknownType as number;
 console.log(`unknownType === ${unknownType}`);
 console.log(`cast1 === ${cast1}`);
 console.log(`cast2 === ${cast2}`);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -54,6 +61,10 @@ console.log(`cast2 === ${cast2}`);
 // console.log(castFromString);
 // console.log(castFromBoolean);
 
+
+/*********************************************************************************************/
+
+
 /**
  * In that case, a double-cast is needed. First, you cast to 'unknown'
  *   and then to the desired type.
@@ -66,6 +77,9 @@ const castFromString: number = (str as unknown) as number;
 const castFromBoolean: boolean = (bool as unknown) as boolean;
 console.log(castFromString);
 console.log(castFromBoolean);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -87,6 +101,10 @@ interface YourType {
 let v1 = { m1: "ValueOfM1" } as YourType;
 console.log(v1);
 
+
+/*********************************************************************************************/
+
+
 /**
  * Where type assertion can be delicate is, for example, if you have an interface that requires
  *   many fields and you cast an empty object to it, the code will compile despite the empty object
@@ -101,6 +119,10 @@ interface IMyType {
 }
 let myVariable = {} as IMyType;
 
+
+/*********************************************************************************************/
+
+
 /**
  * The fallacy of the cast when the underlying object doesn't respect the type schema is one reason
  *   why it's better to assign a type to the variable, and not do type casting.
@@ -112,6 +134,9 @@ let myVariable = {} as IMyType;
  *   format that provides all expected members. Otherwise, it would be wiser to define these members
  *   to be optional (undefined as well as the expected type).
  */
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -153,6 +178,10 @@ console.log(icast4);  // { m1: 'm1' }  // m2 is missing, even if not optional
 //   { m1: 'm1', m2: 'm2' }
 //   { m1: 'm1', m2: 'm2' }
 //   { m1: 'm1' }
+
+
+/*********************************************************************************************/
+
 
 /**
  * The first example above shows an example of two different types (ICast2 to ICast1) without

@@ -10,6 +10,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Merging values
  */
@@ -31,6 +34,9 @@ let variable1: EnumA = EnumA.ChoiceA;
 console.log(`variable1 before update === ${variable1}`);
 variable1 = EnumA.ChoiceB;
 console.log(`variable1 after update === ${variable1}`);
+
+
+/*********************************************************************************************/
 
 
 /**

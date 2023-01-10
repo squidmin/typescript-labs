@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Typescript sandbox",
   "scripts": {
-    "start": "node ./build/27-generic-with-construction-functions/index.js",
+    "start": "node ./build/04-enum-basics/index.js",
     "build": "tsc",
     "clean": "tsc --build --clean",
     "test": "echo \"Error: no test specified\" && exit 1"

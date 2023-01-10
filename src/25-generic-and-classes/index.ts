@@ -13,6 +13,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * A simple class
  */
@@ -53,6 +56,9 @@ species1.sayHello();
  *   to it because TypeScript is structural based and not nominal, which means it does not
  *   rely on the name but on the signature.
  */
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -111,6 +117,9 @@ species4.sayHello();
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Slight modification leading to unpredictable results
  */
@@ -157,6 +166,9 @@ const species5 = new LivingSpecies2(new Human1());
  * When returned, the 'Greeter' type is returned because the notion of a more specific type
  *   is gone.
  */
+
+
+/*********************************************************************************************/
 
 
 /**

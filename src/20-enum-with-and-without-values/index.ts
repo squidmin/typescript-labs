@@ -12,6 +12,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * The role of enum
  */
@@ -20,6 +23,9 @@
  * An enum is a structure that proposes several allowed values for a variable. It is a way to
  *   constrain variable values by defining specific possible entries.
  */
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -35,6 +41,10 @@ enum MyStringEnum {
   ChoiceB = "B",
 }
 
+
+/*********************************************************************************************/
+
+
 /**
  * A mixed enum value type is acceptable if every member is defined. For example, you can have one item
  *   be an integer and another be a string type.
@@ -45,6 +55,9 @@ enum MyStringAndNumberEnum1 {
   ChoiceB = "B",
   ChoiceC = 100,
 };
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -63,6 +76,10 @@ enum MyEnum1 {
 }
 let x: MyEnum1 = MyEnum1.ChoiceA;
 console.log(`x === ${x}`);
+
+
+/*********************************************************************************************/
+
 
 /**
  * The values are all constants starting from 0 for the first item and increasing by one until
@@ -132,6 +149,9 @@ enum MyEnum5 {
 // })(MyEnum5 || (MyEnum5 = {}));
 
 
+/*********************************************************************************************/
+
+
 /**
  * enum with bitwise values
  */
@@ -167,6 +187,10 @@ if (Power.Telepathy === (power1 & Power.Telepathy)) {  // Use '&' bitwise operat
   console.log("Power of telepathy available");
 }
 
+
+/*********************************************************************************************/
+
+
 /**
  * The value of the previous example is 3 because the Invincibility value is '1 << 0' which
  *   is binary 01.
@@ -176,6 +200,10 @@ if (Power.Telepathy === (power1 & Power.Telepathy)) {  // Use '&' bitwise operat
  * The Telepathy value is '1 << 1' which gives the binary 10 nd the or operation provided by
  *   the pipe symbol gives binary 11 which is 3.
  */
+
+
+/*********************************************************************************************/
+
 
 /**
  * It is possible to remove a value from a bitwise enum on the fly by using
@@ -207,6 +235,10 @@ console.log("Power values: " + power2);
 if (Power.Telepathy === (power2 & Power.Telepathy)) {
   console.log("Power of telepathy available");
 }
+
+
+/*********************************************************************************************/
+
 
 /**
  * The value is 1 because from the 3 (which is in binary '11'), you use 'and' of the inverse of

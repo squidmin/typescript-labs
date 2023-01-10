@@ -14,6 +14,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * TypeScript map objects to allow access
  */
@@ -61,6 +64,9 @@ let directionNumber2 = OrientationString.East;  // Access with the enum
 console.log(directionNumber2);
 // console.log(directionString2);  // Doesn't compile
 // console.log(directionString3);  // Doesn't compile
+
+
+/*********************************************************************************************/
 
 
 /**

@@ -1,5 +1,5 @@
 /**
- * The unknown type is half a specific explicit type and half the type any which allows everything.
+ * The 'unknown' type is half a specific explicit type and half the type any which allows everything.
  * Declaring a variable as unknown allows us to set a wide variety of types without allowing
  *   unwanted access to properties or the value of a type. The following code demonstrates
  *   that a variable with type any can be assigned a string and then used with a function of
@@ -17,6 +17,10 @@ console.log(variable1.substr(0,2)) // Output "it"
 variable1 = 1;
 //  console.log(variable1.substr(0,2)) // Crash
 
+
+/*********************************************************************************************/
+
+
 /**
  * Changing the type from any to unknown indicates to TypeScript that the type can receive any
  *   value but should be used cautiously. It does not allow the function to be invoked.
@@ -28,12 +32,20 @@ variable1 = 1;
 //  variable2 = 1;
 //  console.log(variable2.substr(0,2)) // Does not compile here
 
+
+/*********************************************************************************************/
+
+
 /**
  * The only way to access hidden properties or values is to explicitly tell TypeScript a
  *   variable’s type. This can be done by casting or using a type assertion. Here is an example
  *   that lets an unknown variable use the string function, substr. variable3 is of unknown
  *   type but is explicitly cast by asserting its type as string.
  */
+
+
+/*********************************************************************************************/
+
 
 /**
  * Forcing a type is not recommended because it can lead to specifying the wrong one.
@@ -46,17 +58,24 @@ variable3 = "It is a string";
 let variable3String = variable3 as string;
 console.log(variable3String.substring(0, 2));
 
+
+/*********************************************************************************************/
+
+
 /**
- * unknown and null can both be validated without using == or === because of JavaScript.
+ * 'unknown' and 'null' can both be validated without using == or === because of JavaScript.
  *   Both are falsy.
  */
-
 let und: string | undefined = undefined;
 if (und) {
     console.log(und)
 } else {
     console.log("The value is undefined")
 }
+
+
+/*********************************************************************************************/
+
 
 /**
  * In case you need to display a value in an object that has many undefined/null (or optional)
@@ -100,6 +119,9 @@ if (und) {
 // print(obj1);
 // print(obj2);
 // print(obj3);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -146,6 +168,9 @@ print(obj2);
 print(obj3);
 
 
+/*********************************************************************************************/
+
+
 /**
  * In the same vein, TypeScript has nullish coalescing that allows the code to be reduced before
  *   invoking something that can be null or undefined. If you run the following code several
@@ -165,6 +190,9 @@ if (!value1) {
   value1 = "Default"
 }
 console.log(value1);
+
+
+/*********************************************************************************************/
 
 
 /**

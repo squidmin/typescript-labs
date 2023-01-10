@@ -13,6 +13,10 @@ function executeFunctionWithoutReturnType(): void {
  *   other than undefined will result in a compilation error.
  */
 
+
+/*********************************************************************************************/
+
+
 /**
  * Consider a function that is changed multiple times in version control:
  *   The first developer commits code that does not
@@ -23,6 +27,9 @@ function executeFunctionWithoutReturnType(): void {
  *   statements in a big function. Such a function will return many types, albeit appearing to
  *   return void according to the function signature. In reality, it can return anything. 
  */
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -50,6 +57,10 @@ console.log("-- Types --");
 console.log(typeof returnValue1);
 console.log(typeof returnValue2);
 
+
+/*********************************************************************************************/
+
+
 /**
  * Marking the function as void enables the use of an early return because it is similar to
  *   'return undefined'. However, for TypeScript, the type of the two variables is narrowed to
@@ -76,6 +87,9 @@ console.log(`voidVar1 === ${voidVar1}`);
 console.log("-- With false -- ");
 let voidVar2: void = leaveEarly2(false);
 console.log(`voidVar2 === ${voidVar2}`);
+
+
+/*********************************************************************************************/
 
 
 /**

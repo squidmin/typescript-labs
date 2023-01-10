@@ -28,12 +28,20 @@ type Direction = "north" | "south" | "east" | "west";
 let myDirection: Direction = "north";
 // let yourDirection:Direction = "no-where"; // Does not compile
 
+
+/*********************************************************************************************/
+
+
 /**
  * A string literal can be assigned without type by assigning a string value to with the
  *   const declaration or as const.
  */
 const stringLit1 = "oneValueOnly";
 let stringLit2 = "oneValueOnly" as const;
+
+
+/*********************************************************************************************/
+
 
 /**
  * Number literals
@@ -48,6 +56,10 @@ let stringLit2 = "oneValueOnly" as const;
 type Column = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 let menuSize: Column = 4;
 // let mainContent: Column = 100; // Does not compile because only accept 1 to 12
+
+
+/*********************************************************************************************/
+
 
 /**
  * Literal mixed type

@@ -13,6 +13,10 @@ function functionThrow(): never {
   throw new Error("This function returns never");
 }
 
+
+/*********************************************************************************************/
+
+
 /**
  * The 'never' type is a subtype for every type. Hence, you can return 'never' (for example,
  *   throwing an exception) when a return type is specified to be 'void' or 'string', but cannot
@@ -71,8 +75,11 @@ console.log(functionReturnStringFromEnum(EnumWithChoices.ChoiceB));
 // console.log(functionReturnStringFromEnum(EnumWithChoices.ChoiceC));  // Throws error
 
 
+/*********************************************************************************************/
+
+
 /**
- * The type never is also used in the mapped type that you will see in later lessons.
+ * The type 'never' is also used in the mapped type that you will see in later lessons.
  * In every situation where never is used, it is to mark that the code should not be in a
  *   specific state, else it will not compile.
  */
@@ -103,6 +110,9 @@ try {
 }
 
 
+/*********************************************************************************************/
+
+
 /**
  * In cases where TypeScript is unable to logically identify a variable as a specific type,
  *   it will set the value to never.
@@ -129,6 +139,9 @@ if (typeof data == "number"){
 }
 
 
+/*********************************************************************************************/
+
+
 /**
  * If you hover your cursor on the variables a, b, and on the function c, you might be surprised
  *   to see that the types are never, never, and void.
@@ -136,15 +149,9 @@ if (typeof data == "number"){
  *   which serves a purpose on how JavaScript is used. Further details will be seen
  *   in the function lesson.
  */
-let a = () => {
-  throw new Error("A");
-}
-let b = function() { 
-  throw new Error("B");
-}
-function c() { 
-  throw new Error("C");
-}
+let a = () => { throw new Error("A"); }
+let b = function() { throw new Error("B"); }
+function c() { throw new Error("C"); }
 
 
 /**

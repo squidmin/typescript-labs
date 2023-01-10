@@ -1,9 +1,12 @@
 /**
- * Does not compile because the variable is consumed before initialization and TypeScript
+ * The below code does not compile because the variable is consumed before initialization and TypeScript
  *   when configured to be strict, does not allow for interaction with an unassigned variable.
  */
 // let variableNotInitialized: string;
 // console.log(variableNotInitialized);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -30,6 +33,9 @@ console.log(`canBeANumberOrNull === ${canBeANumberOrNull}`);
 // numberNullOrUndefined = null; 
 // numberNullOrUndefined = undefined; 
 // console.log(numberNullOrUndefined);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -74,6 +80,8 @@ function3(3);
 function3(3, undefined);
 
 
+/*********************************************************************************************/
+
 
 /**
  * It is good practice to avoid using null as much as possible and rely instead on undefined.
@@ -105,6 +113,9 @@ function3(3, undefined);
 // }
 
 
+/*********************************************************************************************/
+
+
 /**
  * The following code demonstrates that null adds an additional level of complexity that
  *   most of the time can be avoided by using a type or undefined.
@@ -116,6 +127,9 @@ function f1(p1: null | undefined, p2: undefined | number, p3?: number): void {
   console.log(p3);
 }
 f1(null, 2, undefined);
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -135,6 +149,9 @@ functionWithDefault(undefined);
 functionWithDefault(100);
 
 
+/*********************************************************************************************/
+
+
 /**
  * When data is pulled from external sources, undefined may be used. The variable starts undefined
  *   until the data arrives from the external sources.
@@ -148,6 +165,9 @@ function getDelayedValue(): string {
 }
 function fetchData(): string { return 'somevalue'; }
 getDelayedValue();
+
+
+/*********************************************************************************************/
 
 
 /**

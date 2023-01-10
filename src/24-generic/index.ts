@@ -6,6 +6,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Introduction
  */
@@ -62,6 +65,9 @@ console.log(`component2 === ${component2}`);
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Generic and list
  */
@@ -101,6 +107,9 @@ console.log(list2);  // You can push any type of value
  *   while the second uses any[]. The difference is that the first list leverages the generic
  *   to specify that only the type 'number' can be manipulated.
  */
+
+
+/*********************************************************************************************/
 
 
 /**

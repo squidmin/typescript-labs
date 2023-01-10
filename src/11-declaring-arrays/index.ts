@@ -1,15 +1,20 @@
 /*
  * Multiple type arrays
  */
+
+
 let multipleTypeArray = [1, true, 3];
 // Same as:
 let multipleTypeArrayExplicit: (number | boolean)[] = [1, true, 3];
 
 /**
- * For maintainability, it is good practice to be explicit.
+ * For maintainability, it is good practice to declare variable types explicitly.
  * Without explicitly typing the variable, someone could add a string and suddenly, the
  *   variable allows a number, boolean, and string.
  */
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -31,6 +36,9 @@ function printArray(a: number[]): void {
 }
 
 
+/*********************************************************************************************/
+
+
 /**
  * Read-only arrays
  */
@@ -43,11 +51,19 @@ function printArray(a: number[]): void {
 // list.push(3);
 // console.log(list);
 
+
+/*********************************************************************************************/
+
+
 /**
  * Mutating a const array
  */
 const _list: number[] = [1, 2];
 _list.push(3);  // This works because it doesn't try to change the actual reference to the array.
+
+
+/*********************************************************************************************/
+
 
 /**
  * Re-instantiating a read-only array

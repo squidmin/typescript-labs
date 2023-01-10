@@ -6,6 +6,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Setting enum as const to increase speed
  */
@@ -23,6 +26,9 @@
  */
 
 
+/*********************************************************************************************/
+
+
 /**
  * Drawbacks
  */
@@ -36,6 +42,9 @@
  *   they're initialized, which is allowed with default non-constant 'enum'. However, in both
  *   cases, it's possible to add an entry using square brackets.
  */
+
+
+/*********************************************************************************************/
 
 
 /**

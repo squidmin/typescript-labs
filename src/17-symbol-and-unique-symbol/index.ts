@@ -38,6 +38,10 @@ if (s1 === s2) {
   console.log("Equal when symbol");  // This will not print, they are not equal
 }
 
+
+/*********************************************************************************************/
+
+
 /**
  * An object property can be a symbol. Its assignment uses the symbol between brackets.
  * Do keep in mind that a property defined with a symbol won’t appear when you invoke
@@ -49,6 +53,9 @@ const obj = { [prop1]: "p1" };
 
 // console.log(obj.prop1);  // Does not compile 
 console.log(obj[prop1]);  // "p1"
+
+
+/*********************************************************************************************/
 
 
 /**
@@ -72,6 +79,10 @@ aString = "Value 2";
 
 const aSecondString = "Value3";
 
+
+/*********************************************************************************************/
+
+
 /**
  * Back to the unique symbol, it is similar. In the following code, both the first and
  *   second variables are of type Symbol. However, the last symbol is not of type Symbol,
@@ -83,6 +94,10 @@ aSymbol = Symbol("Value2");  // Type is: Symbol
 
 const aSecondSymbol: Symbol = Symbol("Value3");  // Type is: Symbol
 const aThirdSymbol: unique symbol = Symbol("Value3");  // Type is: typeof(aThirdSymbol)
+
+
+/*********************************************************************************************/
+
 
 /**
  * A unique symbol can only be declared with const. They are also unique therefore, if compared,
