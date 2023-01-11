@@ -16,6 +16,7 @@
  *   expects that the generic 'K' extends 'T', which means that the second parameter needs to extend
  *   the former.
  */
+console.log("Example 1");
 interface TypeA {
   prop1: string;
   prop2: number;
@@ -39,6 +40,7 @@ let c: TypeC = { prop1: "p1", prop2: 2, prop4: 4, };
 
 // printProps(a, b); // Does not transpile because 'B' does not extend 'A'.
 printProps(a, c);
+console.log();
 
 /**
  * The commented code on the above line that reads
@@ -51,6 +53,7 @@ printProps(a, c);
  * What if we would like to mention that we want to allow the property names of a generic type?
  *   For example, let's specify an array of property names to output in the console.
  */
+console.log("Example 2");
 interface TypeA1 {
   prop1: string;
   prop2: number;
@@ -66,6 +69,7 @@ let a2: TypeA1 = { prop1: "p1", prop2: 2, };
 
 printProps2(a, ["prop1"]);
 printProps2(a, ["prop1", "prop2"]);
+console.log();
 
 /**
  * The above line that reads
