@@ -1,6 +1,6 @@
 /**
  * Generic interface
- * This module explains how TypeScript can infer a type.
+ * This lesson explains how TypeScript can infer a type.
  * The following topics are covered:
  *   - Inference and generic
  *   - Implicit type with generic
