@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Typescript sandbox",
   "scripts": {
-    "start": "node ./build/32-generic-and-keyof/index.js",
+    "start": "node ./build/05-functions/index.js",
     "build": "tsc",
     "clean": "tsc --build --clean",
     "test": "echo \"Error: no test specified\" && exit 1"
