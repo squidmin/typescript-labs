@@ -84,4 +84,30 @@ f2();
 /*******************************************************************************************************/
 
 
+/**
+ * Functions and scope
+ * TypeScript does not differ from JavaScript in defining the scope of a variable consumed by a function.
+ * A function can access all defined functions within it as well as all the ones outside of any parent scope.
+ * 
+ * Functions can be nested, which creates a whole set of possibilities around encapsulation strategies.
+ *   For example, you can have a function that has two child functions. These two child functions can access
+ *   the main function variables but cannot access each other's inner variables. This is because both functions
+ *   create a boundary since they define sibling scopes instead of parent-child scopes.
+ */
+var function1 = () => {  // Example of "fat arrow function"
+  let variable1 = 1;
+  var function2 = () => {
+    let variable2 = 2;
+    console.log(variable1 + variable2);  // Access variable from function
+  };
+  function2();
+};
+function1();
+
+/**
+ * In the upcoming lessons, you will see that functions can be categorized into two different families:
+ *   'function expressions' and 'function declarations'.
+ */
+
+
 export {};
