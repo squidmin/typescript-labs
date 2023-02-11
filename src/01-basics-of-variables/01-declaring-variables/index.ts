@@ -48,7 +48,7 @@ const user2 = { id: 2, name: "MyName2", };
 user1.name = user2.name;  // Compiles
 user1.id = 1000;  // Compiles
 
-function constFunction() {
+function constFunction(): void {
   const myList = [ 1, 2, 3, ];
   // Though the value of the list changes, the reference to the list doesn't.
   // The same holds true for an object.
@@ -65,13 +65,15 @@ constFunction();
 // }
 // constFunction();
 
-function constChangeObject() {
+console.log("Example: Change const object property value");
+function changeConstObjectProperty(): void {
   let obj1 = { p1: "p1value", };
   obj1 = { p1: "p1value changed", };
   const obj2 = { p2: "p2value", };
   // obj2 = { p2: "Does not compile", };  // Doesn't compile
   obj2.p2 = "Compiles";
+  console.log(JSON.stringify(obj2));
 }
-constChangeObject();
+changeConstObjectProperty();
 
 export = {};
