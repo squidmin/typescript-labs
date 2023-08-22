@@ -1,5 +1,13 @@
 # typescript-labs
 
-Code repository for learning TypeScript.
+TypeScript sandbox project.
 
-Visit the <a href="https://www.educative.io/courses/learn-typescript-complete-course">course website</a> for source materials.
+<details>
+<summary>About</summary>
+
+**Created using:**
+- `tsc` v4.9.4
+- Webstorm 2022.3.2
+- VSCode v1.69.2
+
+</details>
