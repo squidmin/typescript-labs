@@ -102,14 +102,16 @@ let c = () => {
  *   be able to specify a return type, since 'never' is not a subtype of any type.
  */
 class BaseClass {
-  defineMeLater(): never {  // Infer void, uncomment 'never' to see the consequence
+  defineMeLater()
+    // : never
+  {  // Infer void, uncomment 'never' to see the consequence
     throw new Error("Define me in a subclass");
   }
 }
 class SubClass extends BaseClass {
-  // defineMeLater() {  // Doesn't compile properly
-  //   console.log("SubClass code");
-  // }
+  defineMeLater() {  // Doesn't compile properly if 'never' is declared as the return type of the base class's defineMeLater()
+    console.log("SubClass code");
+  }
 }
 let c2 = new SubClass();
 c2.defineMeLater();  // This will throw an error

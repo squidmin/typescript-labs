@@ -1,10 +1,10 @@
 # Functions and Inference variables
 
-TypeScript can infer the type of a variable.
+TypeScript can infer the data type of a variable.
 
-Hence, it is possible to avoid the use of the colon for ananymous functions by simply setting the variable to an unnamed function that has type parameters and a return type.
+Hence, it's possible to avoid the use of the colon for anonymous functions by simply setting the variable to an unnamed function that has type parameters and a return type.
 
-In the example below, all the `myAnonymous...` functions have no type defined but they are all strongly typed by inference.
+In the example below, all the `myAnonymous...` functions have no type defined, but they are all strongly typed by inference.
 
 <details>
 <summary>Example</summary>

@@ -1,29 +1,33 @@
-/**
- * Simple types example
- */
-console.log("Simple types example:");
-var greet: string = "Greetings!";
-var welcome_message: string = "Welcome to this example!";
+# Declaring variables
+
+<details>
+<summary>Simple types example</summary>
+
+```typescript
+var greet: string = "ballin' !";
+var welcome_message: string = "ballin'";
 console.log(greet + "\n" + welcome_message);
+```
 
-console.log("\n");
+</details>
 
-/**
- * Declaring with 'var'
- */
-console.log("Declaring with \'var\' example:");
+<details>
+<summary>Declaring with 'var'</summary>
+
+```typescript
 var x;
 function varFunction() {
   var x: string = "111";
 }
 console.log(x);
+```
 
-console.log("\n");
+</details>
 
-/**
- * Declaring with 'let'
- */
-console.log("Declaring with \'let\' example:");
+<details>
+<summary>Declaring with 'let'</summary>
+
+```typescript
 function letFunction() {
   let x: string = "111";
   if (true) {
@@ -32,12 +36,17 @@ function letFunction() {
   console.log(x);
 }
 letFunction();
+```
 
-console.log("\n");
+</details>
 
-/**
- * Declaring with 'const'
- */
+<details>
+<summary>Declaring with 'const'</summary>
+
+```typescript
+// const y: string = '111';
+// y = 'this won\'t compile';  // Can't re-assign to a constant
+
 // const y: string = '111';
 // y = 'this won\'t compile';  // Can't re-assign to a constant
 
@@ -63,13 +72,14 @@ constListExample();
 //   console.log(myList);
 // }
 // constListErrorExample();
+```
 
-console.log("\n");
+</details>
 
-/**
- * Example: Change const object property value
- */
-console.log("Example: Change const object property value");
+<details>
+<summary>Example: Change const object property value</summary>
+
+```typescript
 function changeConstObjectProperty(): void {
   let obj1 = { p1: "p1value", };
   obj1 = { p1: "p1value changed", };
@@ -79,5 +89,6 @@ function changeConstObjectProperty(): void {
   console.log(JSON.stringify(obj2));
 }
 changeConstObjectProperty();
+```
 
-export = {};
+</details>
