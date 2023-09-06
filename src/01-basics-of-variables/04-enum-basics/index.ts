@@ -16,8 +16,8 @@
  */
 
 /**
- * An 'enum' is a structire that proposes several allowed values for a variable. It is a way to
- *   constrain variable values by defining specific possible entries.
+ * An 'enum' is a structure that constrains a variable to several allowed values by defining
+ *   specific possible entries.
  */
 
 
@@ -34,7 +34,7 @@ enum MyStringEnum {
 }
 
 /**
- * A mized 'enum' value type is acceptable if every member is defined. For example, you can have
+ * A mixed 'enum' value type is acceptable if every member is defined. For example, you can have
  *   one item be an integer and another be a string type. It is recommended not to mix types since
  *   it might be more confusing than pragmatic.
  */
@@ -150,7 +150,7 @@ enum MyEnum5 {
  * The following code not only initializes the value with the | but also checks the value. With
  *   bitwise, we cannot directly use an equal sign. The reason is that bitwise operation returns
  *   a number, not a boolean. Hence, we need to compare the number to the desired comparison value.
- *   The line that below that reads
+ *   The line below that reads
  *     if (Power.Telepathy === (power & Power.Telepathy)) {
  *   demonstrates how to check the value of an 'enum'.
  */
