@@ -1,7 +1,3 @@
-/*
- * The first parameter is all string literals in the array.
- * The second parameter is a list of all the placeholders.
- */
 function analyzeString(literals: TemplateStringsArray, ...placeholders: any[]) {
   let result = "";
   for (let i = 0; i < placeholders.length; i++) {
