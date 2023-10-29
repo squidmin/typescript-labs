@@ -1,6 +1,6 @@
-# TypeScript Code Explanation
+# String tagged templates
 
-Below is an explanation of the provided TypeScript code, which demonstrates the usage of tagged template literals.
+The below code example demonstrates the usage of tagged template literals.
 
 The first parameter is all string literals in the array.
 
