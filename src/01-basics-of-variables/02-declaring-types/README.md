@@ -2,7 +2,7 @@
 
 ### Source code
 
-#### `index.ts`
+#### `numeric-separators.ts`
 
 ```typescript
 let var_1: number = 2;
