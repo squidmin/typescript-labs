@@ -13,6 +13,18 @@ console.log("Here are 3 variables of type number", x, z, p);
 
 ## Number bases
 
+In addition to decimal (base 10), TypeScript supports:
+- base 16 (hexadecimal)
+- base 8 (octal)
+- base 2 (binary)
+
+with the prefixes
+- `0x`
+- `0o`
+- `0b`
+
+respectively, though they're rarely used.
+
 ### Source code
 
 ```typescript    
@@ -22,8 +34,6 @@ let octo: number = 0o10;
 let bin: number = 0b10;
 console.log("Here are 4 numbers:", dec, hex, octo, bin);
 ```
-
-You can also assign base 16 (hexadecimal), base 8 (octal), or base 2 (binary) with the prefix `0x`, `0o`, and `0b`, though they're rarely used.
 
 ## Numeric separators
 
