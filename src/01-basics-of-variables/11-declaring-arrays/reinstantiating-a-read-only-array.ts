@@ -1,22 +1,3 @@
-/*
- * Multiple type arrays
- */
-
-
-let multipleTypeArray = [1, true, 3];
-// Same as:
-let multipleTypeArrayExplicit: (number | boolean)[] = [1, true, 3];
-
-/**
- * For maintainability, it is good practice to declare variable types explicitly.
- * Without explicitly typing the variable, someone could add a string and suddenly, the
- *   variable allows a number, boolean, and string.
- */
-
-
-/*********************************************************************************************/
-
-
 /**
  * Instantiate a strongly-typed array object
  */
@@ -35,9 +16,7 @@ function printArray(a: number[]): void {
   console.log(`After: ${a}`);
 }
 
-
 /*********************************************************************************************/
-
 
 /**
  * Read-only arrays
@@ -46,14 +25,12 @@ function printArray(a: number[]): void {
 /**
  * Doesn't compile because list.push() attempts to write to the array,
  *   which is blocked when using read-only arrays.
- */ 
+ */
 // let list: ReadonlyArray<number> = [1, 2];
 // list.push(3);
 // console.log(list);
 
-
 /*********************************************************************************************/
-
 
 /**
  * Mutating a const array
@@ -61,9 +38,7 @@ function printArray(a: number[]): void {
 const _list: number[] = [1, 2];
 _list.push(3);  // This works because it doesn't try to change the actual reference to the array.
 
-
 /*********************************************************************************************/
-
 
 /**
  * Re-instantiating a read-only array
@@ -71,6 +46,5 @@ _list.push(3);  // This works because it doesn't try to change the actual refere
 let list: readonly number[] = [1, 2];
 list = [4, 5];
 console.log(list);
-
 
 export {};
